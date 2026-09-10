@@ -2,5 +2,4 @@
 
 int main(void){
   printf("Hello, smort!\n");
-  return 0;
 } 
