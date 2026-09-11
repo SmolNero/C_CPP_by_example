@@ -1,18 +1,17 @@
 #include<stdio.h>
 
+#define TAX 0.05f
+
 int main(void)
 {
     float amount, caculate_tax, total;
-    #define TAX 0.05f
 
-    printf("Please enter your amound to caculate tax: ");
+    printf("Please enter your amount to caculate tax: $");
      scanf("%f", &amount);
     
-    caculate_tax = amount * TAX;
-    total = amount + caculate_tax;
+    total = (amount * TAX) + amount;
 
     printf("Your total after tax is: $%.2f\n", total);
-
 
     return 0; 
 }
