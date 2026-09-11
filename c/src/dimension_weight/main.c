@@ -2,7 +2,9 @@
 #include<stdio.h>
 
 int main(void){
-    int height, length, width, volume, weight;
+  /*Macro defenition - constant*/
+  #define INCHES_PER_POUND 166
+  int height, length, width, volume, weight;
 
     printf("Enter height of box: ");
     scanf("%d", &height);
@@ -12,7 +14,7 @@ int main(void){
     scanf("%d", &width);
 
     volume = height * length * width;
-    weight = (volume + 165) / 166; 
+    weight = (volume + INCHES_PER_POUND - 1) / INCHES_PER_POUND; 
 
     printf("Total Volume(Cubic inches): %d\n", volume);
     printf("Total Weight (Pounds): %d\n", weight);
