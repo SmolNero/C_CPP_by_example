@@ -1,17 +1,12 @@
 #include<stdio.h>
 
-int main(void){
-    int age, id_number;
-    #define POSITION_CALC 1.32455
+#define INCHES_PER_POUND 32
+int pounds = 170, volume = 12;
 
-    printf("Welcome! To determine your position. Please enter the following, starting with your age\n");
-     scanf("%d", &age);
-    printf("Thank you! Next, your employee ID number:\n");
-     scanf("%d", &id_number);
-    
-    float employee_standing = age * id_number * POSITION_CALC;
-    
-    printf("Your current position is: %.6f\n", employee_standing);
+int main()
+{
+    printf("Dimensional weight (pounds): %d\n", 
+        (volume + INCHES_PER_POUND - 1) * INCHES_PER_POUND);
 
     return 0;
 }
