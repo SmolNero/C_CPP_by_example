@@ -1,12 +1,13 @@
 #include<stdio.h>
 
-#define INCHES_PER_POUND 32
-int pounds = 170, volume = 12;
+
+#define POLYNO = ((((3 * 5 + 2) * 5 - 5) * 5 - 1) * 5 + 7) * 5 - 6;      
+
 
 int main()
 {
-    printf("Dimensional weight (pounds): %d\n", 
-        (volume + INCHES_PER_POUND - 1) * INCHES_PER_POUND);
+
+    printf("The Polly is: %.2f", POLYNO);
 
     return 0;
 }
