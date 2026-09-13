@@ -2,9 +2,16 @@
 
 int main()
 {
-   float polyno = ((((3 * 5 + 2) * 5 - 5) * 5 - 1) * 5 + 7) * 5 - 6;
 
-    printf("The Polly is: %.2f", polyno);
+    int amount = 297, twenties;
 
-    return 0;
+    printf("I handed the cashier $%d\n",amount);
+
+    amount = amount / 20;
+
+    twenties = amount % 20;
+
+    printf("I am now left with: $%d\n", twenties);
+
+ return 0;
 }

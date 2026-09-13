@@ -11,13 +11,13 @@ int main(void)
      scanf("%d", &amount);
     
     twenties = amount / 20; 
-    amount = amount - (twenties * 20); 
+    amount = amount % 20; 
 
     tens = amount / 10;
-    amount = amount - (tens * 10);
+    amount = amount % 10;
 
     fives = amount / 5;
-    amount = amount - (fives * 5);
+    amount = amount % 5;
 
     ones = amount;
     
