@@ -9,13 +9,15 @@ int main(void)
 	scanf("%d", &item_number);
 
 	printf("Enter unit price: ");
-	scanf("%5f", &unit_price);
+	scanf("%f", &unit_price);
 
 	printf("Enter purchase date (mm/dd/yyyy): ");
 	scanf("%d/%d/%d", &m, &d, &y);
 
 	printf("Item\tUnit\n\tPrice\t\tDate\n");
 	printf("%d\t$%.2f\t%8d/%d/%d\n", item_number, unit_price, m, d, y);
+
+	//printf("%-8d\t$%9.2f\t%02d/%02d/%04d\n", item_number, unit_price, m, d, y);
 
 	return 0;
 }
