@@ -19,4 +19,5 @@ int main(void){
     printf("Your profit is: %.2f\n", profit);
 
     printf("Both height: %d & id: %d\n", height, id);
+
 }
