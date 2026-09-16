@@ -5,7 +5,8 @@ int main(void)
 	int num1, denom1, num2, denom2, result_num, result_denom;
 
 		printf("Enter two fractions separated by a plus sign: \n");
-		scanf("%d/%d+%d/%d", &num1, &denom1, &num2, &denom2);
+		scanf("%d/%d
+			+%d/%d", &num1, &denom1, &num2, &denom2);
 
 		result_num = num1 * denom2 + num2 * denom1;
 
@@ -14,3 +15,4 @@ int main(void)
 
 	return	0;
 }
+
