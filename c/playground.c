@@ -7,7 +7,7 @@ int main(void)
 	
 	#define TAX 0.05f
 	#define USER_SUM x + y + z
-	#define TOTAL (TAX * USER_SUM) + USER_SUM
+	#define TOTAL (TAX * USER_SUM) + USE	R_SUM
 
 	printf("Welcome, now pick 3 numbers: \n");
 
